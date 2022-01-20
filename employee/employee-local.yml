@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: employee
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: employee
+      repositories:
+        enabled: true
+  cloud:
+    config:
+      override-system-properties: false
+      allow-override: true
+      override-none: true
+      discovery:
+        enabled: true
+
+server:
+  servlet:
+    contextPath: /employee
+
+  sleuth:
+    sampler:
+      probability: 1.0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+      register-with-eureka: true
+      fetch-registry: true
