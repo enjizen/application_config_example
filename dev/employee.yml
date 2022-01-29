@@ -15,14 +15,14 @@ spring:
       override-none: true
       discovery:
         enabled: true
+  sleuth: #add this
+    sampler:
+      probability: 1.0
 
 server:
   servlet:
     contextPath: /employee
-
-  sleuth:
-    sampler:
-      probability: 1.0
+  port: 8182
 
 eureka:
   client:
