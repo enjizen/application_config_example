@@ -28,7 +28,7 @@ server:
 
 eureka:
   instance:
-    ip-address: "${HOST}"
+    hostname: "${HOST}"
   client:
     service-url:
       defaultZone: http://192.168.1.124:9001/eureka
