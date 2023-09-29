@@ -11,7 +11,7 @@ spring:
         - id: customer_service
           uri: lb://CUSTOMER
           predicates:
-            - Path=/customer/**
+            - Path=/customers/**
   sleuth: #add this
     sampler:
       probability: 1.0
