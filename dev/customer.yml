@@ -6,8 +6,7 @@ spring:
     username: root
 
 server:
-  servlet:
-    contextPath: /customers
+  contextPath: /customers
   port: 8011
 
 logging:
