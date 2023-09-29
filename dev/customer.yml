@@ -4,6 +4,8 @@ server:
   port: 8011
 
 spring:
+  webflux:
+    base-path: /customers
   r2dbc:
     url: r2dbc:mysql://localhost:3306/customers
     username: root
