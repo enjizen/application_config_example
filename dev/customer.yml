@@ -3,10 +3,7 @@ server:
     contextPath: /customers
   port: 8011
 
-
 spring:
-  application:
-    name: customer
   r2dbc:
     url: r2dbc:mysql://localhost:3306/customers
     username: root
