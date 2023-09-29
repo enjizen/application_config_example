@@ -1,6 +1,4 @@
 server:
-  servlet:
-    contextPath: /customers
   port: 8011
 
 spring:
