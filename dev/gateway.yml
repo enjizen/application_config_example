@@ -6,7 +6,7 @@ spring:
   cloud:
     gateway:
       default-filters:
- #       - name: EncryptDecryptFilter
+        - name: EncryptDecryptFilter
       routes:
         - id: customer_service
           uri: lb://CUSTOMER
