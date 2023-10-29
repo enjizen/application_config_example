@@ -30,12 +30,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: prometheus,health
+        include: prometheus
   info:
     env:
       enabled: true
-
-info:
-  build:
-    artifact: @project.artifactId@
-    version: @project.version@
