@@ -34,6 +34,3 @@ management:
 info:
   env:
     enabled: true
-  build:
-    artifact: @project.artifactId@
-    version: @project.version@
