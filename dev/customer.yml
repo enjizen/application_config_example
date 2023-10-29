@@ -22,6 +22,9 @@ eureka:
       fetch-registry: true
 
 management:
+  info:
+    env:
+      enabled: true
   endpoint:
     metrics:
       enabled: true
@@ -31,6 +34,3 @@ management:
     web:
       exposure:
         include: prometheus,health,info
-info:
-  env:
-    enabled: true
