@@ -34,3 +34,14 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/discovery/eureka/
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: prometheus

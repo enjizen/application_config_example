@@ -13,3 +13,14 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
   server:
     wait-time-in-ms-when-sync-empty: 0
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
