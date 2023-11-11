@@ -7,6 +7,7 @@ spring:
   r2dbc:
     url: r2dbc:mysql://localhost:3306/customers
     username: root
+    password: 123456
 
 logging:
   level:
