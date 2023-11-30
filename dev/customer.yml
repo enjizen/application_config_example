@@ -1,5 +1,3 @@
-server:
-  port: 8011
 
 #spring:
 #  webflux:
@@ -24,6 +22,7 @@ spring:
 server:
   servlet:
     contextPath: /customers
+  port: 8011
 
 logging:
   level:
