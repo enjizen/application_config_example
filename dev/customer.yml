@@ -61,7 +61,7 @@ management:
         include: prometheus,health,info
 
 masking:
-  enabled: false
+  enabled: true
   masking-keys:
     - mobile_number
     - email
