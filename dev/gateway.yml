@@ -28,7 +28,7 @@ logging:
           gateway: TRACE
 
 server:
-  port: 8001
+  port: 80
 
 eureka:
   client:
