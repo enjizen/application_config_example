@@ -8,7 +8,7 @@ spring:
       default-filters:
         - name: EncryptDecryptFilter
       routes:
-        - id: customer_service
+        - id: customer
           uri: lb://CUSTOMER
           predicates:
             - Path=/customers/**
