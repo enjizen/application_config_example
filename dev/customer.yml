@@ -25,8 +25,11 @@ spring:
       initializationFailTimeout: -1
       maximumPoolSize: 5
       minimumIdle: 1
-  zipkin.baseUrl: http://localhost:9411/
-  sleuth.sampler.probability: 1
+  zipkin:
+    baseUrl: http://localhost:9411
+    sleuth:
+       sampler:
+         percentage: 1.0
 
 server:
   servlet:
