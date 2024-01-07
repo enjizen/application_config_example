@@ -27,7 +27,7 @@ spring:
       minimumIdle: 1
 zipkin:
   tracing:
-    endpoint: http://zipkin:9411/api/v2/spans
+    endpoint: http://localhost:9411/api/v2/spans
   sleuth:
       sampler:
         probability: 1.0
