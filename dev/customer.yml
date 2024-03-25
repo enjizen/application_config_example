@@ -19,7 +19,7 @@ spring:
   application:
     name: customer
   datasource:
-    url: jdbc:mysql://localhost:3306/customers?serverTimezone=Asia/Bangkok
+    url: jdbc:mysql://192.168.1.44:3306/customers?serverTimezone=Asia/Bangkok
     username: root
     password: Welcome1
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -47,6 +47,15 @@ logging:
     org:
       springframework:
         r2dbc: INFO
+  sensitive:
+    enabled: true
+    keys:
+      mobile_number: MASKING
+      email: MASKING
+      first_name: MASKING
+      last_name: MASKING
+      password: HIDDEN
+    masking-size: 4
 
 eureka:
   client:
